@@ -37,6 +37,7 @@ npm run dev
 NEWS_API_KEY=your_newsapi_key
 GUARDIAN_API_KEY=your_guardian_key
 NYTIMES_API_KEY=your_nyt_key
+Please create the .env file and copy the values from .env.develop
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
