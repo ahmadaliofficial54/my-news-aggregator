@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  news-aggregator:
+    container_name: my-news-aggregator-container
+    build: .
+    ports:
+      - '3000:3000'
+    environment:
+      # Reads environment variables from your shell, .env, or other sources 
+      # (depending on how you run it). Example:
+      NEWS_API_KEY: ${NEWS_API_KEY}
+      GUARDIAN_API_KEY: ${GUARDIAN_API_KEY}
+      NYTIMES_API_KEY: ${NYTIMES_API_KEY}
+
+    # If you need to override the Dockerfile CMD, you can specify a command here:
+    # command: ["npm", "run", "start"]
